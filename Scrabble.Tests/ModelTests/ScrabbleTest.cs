@@ -15,5 +15,12 @@ namespace Scrabble.Tests
       //Assert
       Assert.AreEqual(true, testScrabble.IsScrabble("apple"));
     }
+
+      [TestMethod]
+      public void AddPoints_ReturnSum_Int()
+      {
+        Scrabble testScrabble = new Scrabble();
+        Assert.AreEqual(20, testScrabble.Adding("qz"));
+      }
   }
 }

@@ -22,5 +22,12 @@ namespace Scrabble.Tests
         Scrabble testScrabble = new Scrabble();
         Assert.AreEqual(20, testScrabble.Adding("qz"));
       }
+
+      [TestMethod]
+      public void ValidateTheString()
+      {
+        Scrabble testScrabble = new Scrabble();
+        Assert.AreEqual(false, testScrabble.Validate("Abc123"));
+      }
   }
 }
